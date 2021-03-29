@@ -1,0 +1,15 @@
+{
+  "name": "pollev-hack",
+  "version": "1.0.0",
+  "description": "Hack to submit polls for stats class",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+		"cypress:open": "cypress open"
+  },
+  "author": "johnedquinn",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^6.8.0"
+  }
+}
