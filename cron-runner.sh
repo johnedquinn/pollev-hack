@@ -1,9 +1,13 @@
 #!/bin/bash
 
-# cd /Users/jq/Developer/pollev-hack/
+PROJ_HOME=/Users/jq/Developer/pollev-hack
+CYPRESS=${PROJ_HOME}/node_modules/.bin/cypress
+INTEGRATION_DIR=${PROJ_HOME}/cypress/integration
 
-/Users/jq/Developer/pollev-hack/node_modules/.bin/cypress run --config-file false --config video=false -- --record --spec "cypress/integration/runner.js"
+${CYPRESS} run \
+	--config-file false \
+	--config video=false \
+	--config integrationFolder=${INTEGRATION_DIR} \
+	-- --record --spec ./cypress/integration/runner.js
 
 echo "$?" >> /Users/jq/Developer/pollev-hack/pollev-hack.log
-
-# cd -
