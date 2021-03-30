@@ -10,4 +10,4 @@ ${CYPRESS} run \
 	--config integrationFolder=${INTEGRATION_DIR} \
 	-- --record --spec ./cypress/integration/runner.js
 
-echo "$?" >> /Users/jq/Developer/pollev-hack/pollev-hack.log
+echo "DATE: $(date) ---- CYPRESS_STATUS_CODE: $?" >> /Users/jq/Developer/pollev-hack/pollev-hack.log
